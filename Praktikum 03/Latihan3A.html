@@ -1,0 +1,54 @@
+<!--Membuat Form-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LATIHAN 3 (Contoh)</title>
+</head>
+<body>
+    <form action='register.php' method='POST'>
+        <fieldset>
+            <legend>Form Registrasi</legend>
+
+            <p>
+                <label>Username : </label>
+                <input type='text' name='Username' placeholder='contoh123'>
+            </p>
+
+            <p>
+                <label>Password : </label>
+                <input type='password' name='password' placeholder='pass123'>
+            </p>
+
+            <p>
+                <label>Tanggal Lahir : </label>
+                <input type='date' name='tgllahir'>
+            </p>
+
+            <p>
+                <label>Jenis Kelamin : </label>
+                <label><input type='radio' name='tipe' value='male'>Laki-Laki</label>
+                <label><input type='radio' name="tipe" value='female'>Perempuan</label>
+            </p>
+
+            <p>
+                <label>Tipe Akun : </label>
+                <select name='tpakun'>
+                    <option value='Trial'>Trial 7 Hari</option>
+                    <option value='Subs'>Berlangganan</option>
+                    <option value='Premium'>Premium</option>
+                </select>
+            </p>
+
+            <p>
+                <label>Informasi Lainnya : </label>
+                <textarea name='info'></textarea>
+            </p>
+
+            <p>
+                <input type='submit' name='submit' value='Daftar'>
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
