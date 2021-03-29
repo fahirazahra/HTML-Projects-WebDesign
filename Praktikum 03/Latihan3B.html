@@ -1,0 +1,65 @@
+<!--Modifikasi Membuat Form dari Latihan 3-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LATIHAN 3</title>
+</head>
+<body bgcolor='#DEB887'>
+    <h1><b><u><center>FORMULIR PENDAFTARAN CALON ANGGOTA BARU PERPUSTAKAAN UNS 2021</center></u></b></h1>
+    <form action='register.php' method='POST'>
+        <fieldset>
+            <legend><h3><b>Data Diri</b></h3></legend>
+            <p>
+                <label>Nama Lengkap  : </label>
+                <input type='text' name='Nama'>
+            </p>
+            <p>
+                <label>Jenis Kelamin</label>
+                <label><input type='radio' name='tipe' value='male'>Laki-Laki</label>
+                <label><input type='radio' name="tipe" value='female'>Perempuan</label>
+            </p>
+            <p>
+                <label>NIM           : </label>
+                <input type='text' name='NIM' placeholder='contoh : K3520025'>
+            </p>
+            <p>
+                <label>Tempat Lahir : </label>
+                <input type='text' name='tempatlahir' placeholder='Kota Kelahiran'>
+            </p>
+            <p>
+                <label>Tanggal Lahir</label>
+                <input type='date' name='tgllahir'>
+            </p>
+            <p>
+                <label>Fakultas</label>
+                <select name='fakultas'>
+                    <option value='fib'>Fakultas Ilmu Budaya</option>
+                    <option value='fh'>Fakultas Hukum</option>
+                    <option value='fisip'>Fakultas Ilmu Sosial & Ilmu Politik</option>
+                    <option value='fkip'>Fakultas Keguruan & Ilmu Pendidikan</option>
+                    <option value='feb'>Fakultas Ekonomi & Bisnis</option>
+                    <option value='ft'>Fakultas Teknik</option>
+                    <option value='fk'>Fakultas Kedokteran</option>
+                    <option value='fp'>Fakultas Pertanian</option>
+                    <option value='fmipa'>Fakultas Matematika & Ilmu Pengetahuan Alam</option>
+                    <option value='fsrd'>Fakultas Seni Rupa & Desain</option>
+                    <option value='fkor'>Fakultas Keolahragaan</option>
+                    <option value='sv'>Sekolah Vokasi</option>
+                </select>
+            </p>
+            <p>
+                <label>Program Studi : </label>
+                <input type='text' name='prodi'>
+            </p>
+            <p>
+                <label>Alasan Mendaftarkan Diri : </label>
+                <textarea name='info' placeholder='contoh : Ingin menambah pengalaman, relasi, dll.''></textarea>
+            </p>
+            <p>
+                <input type='submit' name='submit' value='Submit'>
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
