@@ -1,0 +1,48 @@
+/*Latihan 3 (CSS External Style)*/
+body {
+    background-color: rgb(222, 184, 135);
+}
+h1 {
+    font-size: xx-large;
+    text-align: center;
+    color: rgb(128, 4, 0);
+}
+
+p {
+    color: maroon;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    text-align: justify;
+}
+
+/*Latihan 4 (CSS Selector Class)*/
+body {
+    background-color: salmon;
+}
+h1 {
+    color: darkred;
+    margin-left: 20px;
+}
+
+p {
+    color: #FAEBD7;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+    text-align: justify;
+}
+
+.kotak{
+    padding: 20px;
+    width: fit-content;
+    color: white;
+    margin: 10px;
+    background: firebrick;
+}
+
+#persegi{
+    padding: 40px;
+    width: fit-content;
+    color: white;
+    margin: 10px;
+    background: darkred;
+}
