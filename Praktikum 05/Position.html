@@ -1,0 +1,57 @@
+<!--Menentukan Posisi-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Praktikum 6.1</title>
+        <style>
+            .static {
+                left: 100px;
+                position: static;
+                width: 300px;
+                height: 1000px;
+                background: magenta;
+            }
+
+            .relative {
+                left: 100px;
+                position: relative;
+                width: 400px;
+                height: 200px;
+                background: cyan;
+            }
+
+            .absolute {
+                left: 350px;
+                top: 150px;
+                position: absolute;
+                width: 300px;
+                height: 100px;
+                background: orangered;
+            }
+
+            .fixed {
+                left: 300px;
+                top: 50px;
+                position: fixed;
+                width: 200px;
+                height: 100px;
+                background: greenyellow;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="static">
+            <center><b>Position: static.</b></center><br>Nilai Left: 100px *tidak berpengaruh
+        </div>
+        <div class="relative">
+            <center><b>Position: relative.</b></center><br>Nilai Left: 100px *mengikuti alur
+        </div>
+        <div class="absolute">
+            <center><b>Position: absolute.</b></center><br>*Bisa diletakkan dimana saja
+        </div>
+        <div class="fixed">
+            <center><b>Position: fixed.</b></center><br>*Posisi tetap walau di-scroll
+        </div>
+    </body>
+</html>
