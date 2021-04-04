@@ -1,0 +1,41 @@
+<!--Menentukan Posisi & Z-Index-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Praktikum 6.2 Z-Index</title>
+        <style>
+            #layerA {
+                position: absolute;
+                margin: 20px 150px;
+                height: 200px;
+                width: 200px;
+                background: deeppink;
+                z-index: 3;
+            }
+
+            #layerB {
+                position: fixed;
+                margin: 100px 0;
+                height: 150px;
+                width: 300px;
+                background: darkturquoise;
+                z-index: 2;
+            }
+
+            #layerC {
+                position: static;
+                margin: 0 20px;
+                height: 200px;
+                width: 400px;
+                background: darkviolet;
+                z-index: 1;
+            }
+        </style>
+    </head>
+    <body text="white"><b>
+        <div id="layerA">Layer A</div>
+        <div id="layerB">Layer B</div>
+        <div id="layerC">Layer C</div>
+    </b></body>
+</html>
