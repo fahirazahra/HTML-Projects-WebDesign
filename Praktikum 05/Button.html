@@ -1,0 +1,43 @@
+<!--Membuat Tampilan Menu Button Hyperlink (bisa di-klik)-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Praktikum 6.3 Menu Button Hyperlink</title>
+        <style>
+            a:link, a:visited {
+                color: white;
+                padding: 14px 25px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+            }
+
+            a:hover, a:active {
+                background-color: skyblue;
+            }
+
+            .web #GitHub a {
+                background-color: black;
+            }
+
+            .web #Facebook a {
+                background-color: #3B5998;
+            }
+
+            .web #Twitter a {
+                background-color: #00ACEE;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="web">
+            <div id="GitHub">
+                <a href="https://github.com/fahirazahra" target="_blank">GitHub</a></div><br>
+            <div id="Facebook">
+                <a href="https://www.facebook.com/" target="_blank">Facebook</a></div><br>
+            <div id="Twitter">
+                <a href="https://twitter.com/" target="_blank">Twitter</a></div><br>
+        </div>
+    </body>
+</html>
