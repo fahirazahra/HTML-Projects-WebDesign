@@ -1,0 +1,45 @@
+<html>
+    <head><title>Biodata</title></head>
+    <body>
+        <!--Javascript-->
+        <script>
+            function data(){
+                var nama = (document.dform.nama.value);
+                var alamat = (document.dform.alamat.value);
+                document.dform.onama.value = nama;
+                document.dform.oalamat.value = alamat;
+                var jurusan = (document.dform.jurusan.value);
+                document.dform.ojurusan.value = jurusan;
+                var keterangan = (document.dform.keterangan.value);
+                document.dform.oket.value = keterangan;
+            }
+        </script>
+
+        <!--Form untuk Menangkap Nilai-->
+        <form name="dform">
+            <h1>Masukkan Biodata Anda</h1>
+
+<!--Dibuat menjorok ke kiri dikarenakan agar berada di kiri, efek dari tag <pre>-->
+<pre>
+Nama : <input type="text" name="nama">
+Alamat : <input type="text" name="alamat">
+Gender : <input type="radio" value="Perempuan" name="keterangan">Perempuan
+         <input type="radio" value="Laki-Laki" name="keterangan">Laki-Laki
+Jurusan : <select name="jurusan">
+    <option value="Teknik Informatika">Teknik Informatika</option>
+    <option value="Teknik Sipil">Teknik Sipil</option>
+    <option value="Teknik Mesin">Teknik Mesin</option>
+</select>
+</pre>
+            <input type="button" value="Masukkan" onclick="data()">
+            <input type="reset" value="Reset">
+
+            <!--Menampilkan Nilai tidak Menggunakan tag <pre>-->
+            <h2>Keluaran : </h2>
+            Nama : <input type="text" name="onama">
+            Alamat : <input type="text" name="oalamat">
+            Jurusan : <input type="text" name="ojurusan">
+            Gender : <input type="text" name="oket">
+        </form>
+    </body>
+</html>
