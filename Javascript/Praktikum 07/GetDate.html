@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Belajar GetDate Javascript</title>
+    </head>
+    <body>
+        <center>Latihan Objek Date</center>
+
+        <script lang="javascript">
+            var hari = new Array("Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu", "Minggu");
+            var bulan = new Array("Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember");
+            var t = new Date();
+            var hari_ini = t.getDay();
+            var tanggal = t.getDate();
+            var bulan_ini = t.getMonth();
+            var tahun_ini = t.getFullYear();
+            var menit = t.getMinutes();
+            var jam = t.getHours();
+
+            var hariIni = hari[t.getDay()-1];
+            var bln = bulan[t.getMonth()];
+
+            document.write("<hr>");
+            document.write("<center> Sekarang adalah hari " + hari_ini + " tanggal " + tanggal + " bulan " + bulan_ini + " \ tahun " + tahun_ini + "</center><hr>");
+            document.write("<center> Sekarang adalah hari " + hariIni + "," + " tanggal " + tanggal + " bulan " + bln + " \ tahun " + tahun_ini + "</center><hr>");
+            document.write("<center> Pukul " + jam + " : " + menit + "</center>");
+        </script>
+    </body>
+</html>
