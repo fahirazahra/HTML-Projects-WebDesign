@@ -1,0 +1,32 @@
+<!--Coba 5 Penulisan jQuery (pada Efek dan Animasi)-->
+
+<html>
+    <head>
+        <title>
+            Mencoba jQuery 5
+        </title>
+
+        <!--Alamat untuk mengakses jQuery-->
+        <script src="jquery-3.6.0.min.js"></script>
+
+        <!--Untuk memberitahu browser bahwa di dalam browser akan ditampilkan Javascript-->
+        <script type="text/javascript"></script>
+
+        <script>
+            function tampilgambar(){
+                $("#target").show(); // $ = digunakan untuk memanggil jQuery
+            }
+            function sembunyigambar(){
+                $("#target").hide(); // $ = digunakan untuk memanggil jQuery
+            }
+        </script>
+    </head>
+
+    <body>
+        <h4>Mencoba Hide and Show</h4>
+        <img src="ToyStory.jpg" height="200px" width="330px" id="target">
+        <br>
+        <pre> <button onclick="tampilgambar()">Tampilkan Gambar</button> <button onclick="sembunyigambar()">Sembunyikan Gambar</button> </pre>
+    </body>
+
+</html>
