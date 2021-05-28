@@ -1,0 +1,49 @@
+<!--Latihan 4 Penulisan jQuery (Membuat Tab Menu)-->
+
+<html>
+    <head>
+        <title>
+            Mencoba jQuery UI (Tab Menu)
+        </title>
+
+        <!--Pemanggilan jQuery, jQuery UI, & file .CSS-->
+        <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="jQuery-UI/jquery-ui.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="jQuery-UI/jquery-ui.min.css">
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+                    $("#tabs").tabs();
+            });
+        </script>
+    </head>
+
+    <body>
+        <div id="tabs">
+            <ul>
+                <li><a href="#tabs-1">V. Rossi</a></li>
+                <li><a href="#tabs-2">P. Pedrosa</a></li>
+                <li><a href="#tabs-3">Z. Zidane</a></li>
+            </ul>
+
+            <div id="tabs-1">
+                Valentino Rossi adalah seorang pembalap di kejuaraan Grandprix
+                motor dunia setelah era Michael Doohan, dengan titel juara dunia
+                di empat kelas yang berbeda, yang diraihnya dalam waktu tujuh tahun terakhir. Wikipedia
+            </div>
+    
+            <div id="tabs-2">
+                Daniel "Dani" Pedrosa Ramal adalah salah seorang pembalap MotoGP.
+                Ia mulai debut balap Grandprix motor pada tahun 2001 di kelas GP 125cc
+                bersama tim Telefonica Movistar Honda JR, dan meraih posisi ke-8 klasemen terakhir.
+                Tahun 2002 ia membalap di tim yang sama dan meraih juara 3 dunia GP 125cc. Wikipedia
+            </div>
+    
+            <div id="tabs-3">
+                Zinedine Yazid Zidane yang terkenal dan populer dengan panggilan
+                Zizou adalah seorang mantan pemain sepak bola Perancis keturunan Aljazair.
+                Posisinya adalah gelandangan menyerang. Memulai karier sebagai pemain di klub AS Cannes,
+                ia kemudian bermain di Bordeaux, Juventus, dan terakhir Real Madrid. Wikipedia
+            </div>
+    </body>
+</html>
