@@ -1,0 +1,31 @@
+<!--Latihan 2 Penulisan jQuery (Membuat Efek Slide Toggle)-->
+
+<html>
+    <head>
+        <title>
+            Mencoba Slide Toggle
+        </title>
+
+        <!--Pemanggilan jQuery-->
+        <script src="jquery-3.6.0.min.js"></script>
+        <script type="text/javascript"></script>
+
+        <style>
+            p {
+                width: 500px;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <button>Toggle</button>
+        <p>
+            <img src="ToyStory.jpg" height="200px" width="330px">
+        </p>
+        <script>
+            $("button").click(function(){
+                $("p").slideToggle("slow");
+            });
+        </script>
+    </body>
+</html>
