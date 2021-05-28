@@ -1,0 +1,27 @@
+<!--Latihan 1 Penulisan jQuery (Membuat Efek Toggle)-->
+
+<html>
+    <head>
+        <title>
+            Mencoba Toggle
+        </title>
+
+        <!--Pemanggilan jQuery-->
+        <script src="jquery-3.6.0.min.js"></script>
+        <script type="text/javascript"></script>
+
+    </head>
+
+    <body>
+        <p>
+            <img src="ToyStory.jpg" height="200px" width="330px">
+        </p>
+        <button>Toggle</button>
+
+        <script>
+            $("button").click(function(){
+                $("p").toggle();
+            });
+        </script>
+    </body>
+</html>
