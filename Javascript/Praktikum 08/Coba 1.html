@@ -1,0 +1,25 @@
+<!--Coba 1 Penulisan jQuery (pada Selector ID)-->
+
+<html>
+    <head>
+        <title>
+            Mencoba jQuery 1
+        </title>
+
+        <!--Alamat untuk mengakses jQuery-->
+        <script src="jquery-3.6.0.min.js"></script>
+        
+        <!--Untuk memberitahu browser bahwa di dalam browser akan ditampilkan Javascript-->
+        <script type="text/javascript">
+            $(document).ready(function(){ // $ = digunakan untuk memanggil jQuery
+                alert(jQuery("img").attr("alt")); //dapat juga memanggil dengan menggunakan jQuery itu sendiri, seperti kode di samping ini.
+            });
+        </script>
+    </head>
+
+    <body>
+        Uji coba pertama saya menggunakan jQuery.
+        <img src="ToyStory.jpg" height="200px" width="330px" alt="jQuery Pertama-ku">
+    </body>
+
+</html>
