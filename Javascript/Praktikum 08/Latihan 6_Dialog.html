@@ -1,0 +1,35 @@
+<!--Latihan 6 Penulisan jQuery (Membuat Kotak Dialog)-->
+
+<html>
+    <head>
+        <title>
+            Mencoba jQuery UI (Kotak Dialog)
+        </title>
+
+        <!--Pemanggilan jQuery, jQuery UI, & file .CSS-->
+        <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="jQuery-UI/jquery-ui.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="jQuery-UI/jquery-ui.min.css">
+
+        <script type="text/javascript">
+                    $(function(){
+                        $("#dialogku").dialog({
+                            show: "blind",
+                            hide: "explode"
+                        });
+
+                        $("#idbuka").click(function(){
+                            $("#dialogku").dialog("open");
+                            return false;
+                        });
+                    });
+        </script>
+    </head>
+
+    <body>
+        <div id="dialogku" title="Peringatan">
+            <p>Merokok itu awalnya bergaya, lama-lama berbahaya, dan akhirnya enggak bernyawa.</p>
+        </div>
+        <button id="idbuka">Klik Disini</button>
+    </body>
+</html>
