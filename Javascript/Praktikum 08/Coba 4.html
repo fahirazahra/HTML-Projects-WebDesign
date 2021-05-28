@@ -1,0 +1,28 @@
+<!--Coba 4 Penulisan jQuery (pada Event)-->
+
+<html>
+    <head>
+        <title>
+            Mencoba jQuery 4
+        </title>
+
+        <!--Alamat untuk mengakses jQuery-->
+        <script src="jquery-3.6.0.min.js"></script>
+
+        <!--Untuk memberitahu browser bahwa di dalam browser akan ditampilkan Javascript-->
+        <script type="text/javascript">
+            $(document).ready(function(){ // $ = digunakan untuk memanggil jQuery
+                $(".klik").click(function(){
+                    alert("Anda telah melakukan klik.");
+                });
+            });
+        </script>
+    </head>
+
+    <body>
+        <div class="klik">
+            <h4>Klik Disini</h4>
+        </div>
+    </body>
+
+</html>
