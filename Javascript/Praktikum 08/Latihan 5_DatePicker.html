@@ -1,0 +1,25 @@
+<!--Latihan 5 Penulisan jQuery (Membuat Date Picker)-->
+
+<html>
+    <head>
+        <title>
+            Mencoba jQuery UI (Date Picker)
+        </title>
+
+        <!--Pemanggilan jQuery, jQuery UI, & file .CSS-->
+        <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="jQuery-UI/jquery-ui.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="jQuery-UI/jquery-ui.min.css">
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#tgl").datepicker();
+            });
+        </script>
+    </head>
+
+    <body>
+        Tanggal Lahir : <br>
+        <input id="tgl" type="text">
+    </body>
+</html>
