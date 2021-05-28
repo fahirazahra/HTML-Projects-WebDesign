@@ -1,0 +1,43 @@
+<!--Coba 3 Penulisan jQuery (pada Selector ID)-->
+
+<html>
+    <head>  
+        <title>
+            Mencoba jQuery 3
+        </title>
+
+        <!--Alamat untuk mengakses jQuery-->
+        <script src="jquery-3.6.0.min.js"></script>
+        
+        <!--Untuk memberitahu browser bahwa di dalam browser akan ditampilkan Javascript-->
+        <script type="text/javascript">
+            $(document).ready(function(){ // $ = digunakan untuk memanggil jQuery
+                $(".target").addClass("garis");;
+            });
+
+            $(document).ready(function(){
+                $("div").addClass("blok");;
+            });
+        </script>
+
+        <style>
+            .garis{
+                background-color: aquamarine;
+            }
+
+            .blok{
+                background-color: burlywood;
+            }
+        </style>
+    </head>
+
+    <body>
+        <p class="target">Uji coba kedua saya menggunakan jQuery.</p>
+        <p>Uji coba kedua saya menggunakan jQuery.</p>
+        <br>
+        <div>
+            <h4>Uji coba ketiga saya menggunakan jQuery</h4>
+        </div>
+    </body>
+
+</html>
