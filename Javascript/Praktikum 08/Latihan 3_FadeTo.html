@@ -1,0 +1,24 @@
+<!--Latihan 3 Penulisan jQuery (Membuat Efek Fade to)-->
+
+<html>
+    <head>
+        <title>
+            Mencoba Fade to
+        </title>
+
+        <!--Pemanggilan jQuery-->
+        <script src="jquery-3.6.0.min.js"></script>
+        <script type="text/javascript"></script>
+    </head>
+
+    <body>
+        <div style="display: none;"><img src="ToyStory.jpg" height="200px" width="330px"></div>
+        <input value="Fade to" type="submit">
+
+        <script>
+            $(":submit").click(function(){
+                $("div").fadeTo("slow", .33); // 0.33 adalah persentase kecerahan
+            });
+        </script>
+    </body>
+</html>
