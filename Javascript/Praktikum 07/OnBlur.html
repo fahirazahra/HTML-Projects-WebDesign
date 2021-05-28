@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Belajar OnBlur OnFocus Javascript</title>
+    </head>
+    <body>
+        <script lang="javascript">
+
+            function danger(){
+                var nomor = (document.f.inim.value);
+                if (nomor == ""){
+                    document.getElementById("nimfokus").style.background = "red";
+                }
+            }
+
+            function danger2(){
+                var nama2 = (document.f.inama.value);
+                if (nama2 == ""){
+                    document.getElementById("namafokus").style.background = "red";
+                }
+            }
+
+            function pokus(){
+                document.getElementById("nimfokus").style.background = "lightblue"
+            }
+
+            function pokus2(){
+                document.getElementById("namafokus").style.background = "lightblue";
+            }
+
+            function terimakasih(){
+                if(document.f.inim.value!="")&&(document.f.inama.value!="")){
+                    alert("Terima kasih telah mengisi data.");
+                }else{
+                    alert("Mohon dilengkapi!");
+                }
+            }
+        </script>
+        
+        <center>
+            <h1>Event on Focus and on Blur</h1>
+            <hr>
+            <h3>R E G I S T R A S I</h3>
+            <hr>
+
+            <form name="f" method="POST">
+                NIM : <input type="text" name="inim" id="nimfokus" onfocus="pokus()" onblur="danger()">
+                Nama : <input type="text" name="inama" id="namafokus" onfocus="fokus2()" onblur="danger2()">
+
+                <input type="button" value="Kirim" onclick="terimakasih()">
+                <input type="reset" value="Reset">
+            </form>
+        </center>
+    </body>
+</html>
